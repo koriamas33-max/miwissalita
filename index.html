@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Komo te kiero</title>
+    <style>
+        body {
+            /* Fondo rosa muy suave y romántico */
+            background-color: #fff0f3;
+            /* Centra todo el contenido en la pantalla */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            overflow: hidden; /* Para que los corazones no creen barras de desplazamiento */
+        }
+
+        .contenedor {
+            text-align: center;
+            position: relative;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semi-transparente para el texto */
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* Sombra suave */
+        }
+
+        h1 {
+            color: #d81b60; /* Color rosa fuerte para el texto */
+            font-size: 3rem;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1); /* Sombra suave en el texto */
+        }
+
+        .corazon-lazo {
+            font-size: 2rem;
+            color: #ff4081; /* Color rosa brillante para los corazones */
+            position: absolute;
+            animation: latido 1.5s infinite; /* Animación de latido */
+        }
+
+        /* Posicionamiento de los corazones alrededor del texto */
+        .corazon-1 { top: -40px; left: -40px; }
+        .corazon-2 { top: -40px; right: -40px; }
+        .corazon-3 { bottom: -40px; left: -40px; }
+        .corazon-4 { bottom: -40px; right: -40px; }
+
+        /* Animación de latido */
+        @keyframes latido {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="contenedor">
+        <div class="corazon-lazo corazon-1">💝</div>
+        <div class="corazon-lazo corazon-2">💝</div>
+        
+        <h1>komo te kiero</h1>
+        
+        <div class="corazon-lazo corazon-3">💝</div>
+        <div class="corazon-lazo corazon-4">💝</div>
+    </div>
+
+</body>
+</html>
